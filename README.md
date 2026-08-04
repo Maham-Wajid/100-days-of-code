@@ -24,21 +24,21 @@ The goal isn't just to solve problems — it's to build consistency, strengthen 
 
 ## 📊 Progress
 
-**Current Progress:** `0 / 100 days` *(Day 001 in progress)*
+**Current Progress:** `0 / 100 days` *(Day 001 — 2/3 problems done)*
 
 **Completion:** `0%`
 
 **Current Streak:** `1 day`
 
-| Day | Date       | Problem / Topic              | Language | Status |
-| --- | ---------- | ---------------------------- | -------- | ------ |
-| 001 | Aug 5, 2026 | Chessboard Cell Color (1/3) | Python   | 🔄     |
-| 002 | —          | —                            | —        | ⏳     |
-| 003 | —          | —                            | —        | ⏳     |
-| 004 | —          | —                            | —        | ⏳     |
-| 005 | —          | —                            | —        | ⏳     |
-| ... | ...        | ...                          | ...      | ...    |
-| 100 | —          | —                            | —        | ⏳     |
+| Day | Date        | Problem / Topic                                      | Language | Status |
+| --- | ----------- | ---------------------------------------------------- | -------- | ------ |
+| 001 | Aug 5, 2026 | Chessboard Cell Color · Youngest Family Member (2/3) | Python   | 🔄     |
+| 002 | —           | —                                                    | —        | ⏳     |
+| 003 | —           | —                                                    | —        | ⏳     |
+| 004 | —           | —                                                    | —        | ⏳     |
+| 005 | —           | —                                                    | —        | ⏳     |
+| ... | ...         | ...                                                  | ...      | ...    |
+| 100 | —           | —                                                    | —        | ⏳     |
 
 ➡️ For the detailed tracker, see [`progress.md`](progress.md).
 
@@ -164,7 +164,7 @@ Useful resources and references collected during the challenge are documented in
 
 **Target:** `2026-11-12`
 
-**Days Completed:** `0 / 100` *(Day 001 underway)*
+**Days Completed:** `0 / 100` *(Day 001 — 2/3 problems)*
 
 ---
 

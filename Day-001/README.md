@@ -4,13 +4,13 @@
 
 ## 📊 Today's Progress
 
-| #  | Problem                                          | Topic          | Difficulty | Status |
-| -- | ------------------------------------------------ | -------------- | ---------- | ------ |
-| 01 | [Chessboard Cell Color](./01-chessboard-cell-color/) | String, Array  | Easy       | ✅      |
-| 02 | [Problem Name](./Problem-02/)                    | Strings        | Medium     | ⏳      |
-| 03 | [Problem Name](./Problem-03/)                    | Hashing        | Easy       | ⏳      |
+| #  | Problem                                              | Topic                         | Difficulty | Status |
+| -- | ---------------------------------------------------- | ----------------------------- | ---------- | ------ |
+| 01 | [Chessboard Cell Color](./01-chessboard-cell-color/) | String, Array                 | Easy       | ✅      |
+| 02 | [Youngest Family Member](./02-youngest-family-member/) | Graph, Hashing, Array       | Easy       | ✅      |
+| 03 | [Problem Name](./Problem-03/)                        | Hashing                       | Easy       | ⏳      |
 
-**Progress:** `1 / 3`
+**Progress:** `2 / 3`
 
 ---
 
@@ -20,9 +20,9 @@
 
 > Map file letter to a number; black/white is just the parity of `(file + rank)` with a1 black.
 
-### Problem 02
+### Problem 02 — Youngest Family Member
 
-> [One important thing learned]
+> Youngest = unique person with out-degree 0 and in-degree n−1 (receives from all, gives none).
 
 ### Problem 03
 
@@ -34,15 +34,15 @@
 
 **What went well?**
 
-Solved the chessboard color problem with a clear mapping from letter to index and a simple parity check.
+Chessboard color via parity, then gift-exchange youngest member via degree counts — both map a story onto a simple structural rule.
 
 **What was difficult?**
 
-Easy problem overall; the main slip was a typo in the long `if`/`elif` chain (`[0]` instead of `s[0]`), which silently wrong-mapped file `c`.
+P01: typo in a long if-chain. P02: carefully encoding “from everyone else” as in-degree `n - 1`, not “has any gifts.”
 
 **What did I learn today?**
 
-Prefer `ord()` (or a dict) over multi-branch letter mapping, and always anchor chessboard problems with a known cell (a1 = black).
+Prefer clean mappings (`ord`, degree arrays) over fragile branchy code; restate verbal rules as exact numeric conditions before coding.
 
 ---
 

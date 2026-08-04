@@ -4,7 +4,7 @@
 
 ## Overall Progress
 
-**Completed:** `0 / 100` *(Day 001 in progress — 1/3 problems)*
+**Completed:** `0 / 100` *(Day 001 in progress — 2/3 problems solved)*
 
 **Progress:** `0%`
 
@@ -18,7 +18,7 @@
 
 | Day | Date | Problem / Topic | Language | Difficulty | Status |
 | --- | ---- | --------------- | -------- | ---------- | ------ |
-| 001 | Aug 5, 2026 | [Chessboard Cell Color](./Day-001/01-chessboard-cell-color/) (+2 pending) | Python | Easy | 🔄 |
+| 001 | Aug 5, 2026 | [Chessboard Cell Color](./Day-001/01-chessboard-cell-color/) · [Youngest Family Member](./Day-001/02-youngest-family-member/) · 1 pending | Python | Easy | 🔄 |
 | 002 | —    | —               | —        | —          | ⏳      |
 | 003 | —    | —               | —        | —          | ⏳      |
 | 004 | —    | —               | —        | —          | ⏳      |
@@ -138,7 +138,7 @@
 | ------------------- | ---- |
 | Arrays              | 001  |
 | Strings             | 001  |
-| Hashing             | —    |
+| Hashing             | 001  |
 | Searching           | —    |
 | Sorting             | —    |
 | Recursion           | —    |
@@ -146,7 +146,7 @@
 | Stacks              | —    |
 | Queues              | —    |
 | Trees               | —    |
-| Graphs              | —    |
+| Graphs              | 001  |
 | Dynamic Programming | —    |
 | Other               | —    |
 
@@ -156,15 +156,15 @@
 
 ### Biggest Lesson So Far
 
-> Prefer clean index mapping (`ord`) over long `if`/`elif` chains — one character bug can silently break a case.
+> Build the numeric rule from a small hand case, then generalize. Reject wrong targets early (e.g. chess parity, receive count = n−1 not m).
 
 ### Hardest Problem So Far
 
-> Day 001 P01 (Chessboard Cell Color) — easy overall; still early in the challenge.
+> Day 001 P02 (Youngest Family Member) — careful edge cases (`m = 0`, `n = 1`) and full degree conditions.
 
 ### Most Useful Concept
 
-> Parity / modulo for alternating patterns (chessboard colors).
+> Map stories to structure: parity on a grid; graph degrees (in = n−1, out = 0).
 
 ### Advice to My Day-1 Self
 
