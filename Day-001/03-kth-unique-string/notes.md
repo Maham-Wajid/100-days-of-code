@@ -98,21 +98,25 @@ later_repeats[s] -- increment when s appears after first consideration
 unique-style score: later_repeats[s] == 0   (intended)
 ```
 
-Preferred counting:
+Preferred / optimized counting (submitted after first attempt):
 
 ```text
-freq[s] = total occurrences of s
-walk list left→right; collect s where freq[s]==1; pick index k
+freq[s] = total occurrences of s          # one pass
+walk freq.items() (insertion order)       # first appearance
+collect keys where freq[s]==1; pick k-th
 ```
+
+Walking the original list and keeping only `freq[s] == 1` is equivalent
+for unique strings, since each unique key is first inserted at its only index.
 
 ---
 
 ## 🧠 Approach (final)
 
 1. Count frequency of every string (hash map).
-2. Walk the original list in order.
-3. Skip strings with frequency ≠ 1.
-4. Return the kth string that passes; else `-1`.
+2. Walk dict items (insertion = first-appearance order) or walk the list.
+3. Keep keys with frequency `== 1`.
+4. Return the kth match; else `-1`.
 
 ---
 
@@ -126,10 +130,10 @@ See [`solution.py`](solution.py).
 
 | Version | Time | Space |
 | --- | --- | --- |
-| Submitted (nested loops) | `O(N²)` string compares | `O(U)` unique keys |
-| Improved (freq + walk) | `O(N)` | `O(U)` |
+| First attempt (nested loops) | `O(N²)` string compares | `O(U)` unique keys |
+| Optimized (freq + dict walk) | `O(N)` | `O(U)` |
 
-Constraints: `N ≤ 10³` so both can pass; improved is clearer and safer.
+Constraints: `N ≤ 10³` so both can pass; optimized is clearer and safer.
 
 ---
 

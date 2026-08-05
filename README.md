@@ -46,35 +46,44 @@ The goal isn't just to solve problems — it's to build consistency, strengthen 
 
 ## 📂 Repository Structure
 
-Each day has its own folder:
+Each day has its own folder; each problem is a subfolder:
 
 ```text
 Day-001/
-├── solution.py
-└── notes.md
+├── README.md
+├── 01-chessboard-cell-color/
+│   ├── solution.py
+│   └── notes.md
+├── 02-youngest-family-member/
+│   ├── solution.py
+│   └── notes.md
+└── 03-kth-unique-string/
+    ├── solution.py
+    └── notes.md
 
 Day-002/
-├── solution.py
-└── notes.md
-
-...
+└── ...
 ```
 
-### `solution`
+### `solution.py`
 
-Contains the solution/code written for that day's challenge.
+Contains the solution/code for that problem (submitted + improved when relevant).
 
 ### `notes.md`
 
 Contains a short reflection covering:
 
 * Problem
-* Approach
+* Critical thinking / approach
 * Key idea
 * What I learned
 * Complexity
 * Challenges / mistakes
 * Possible improvements
+
+### Day `README.md`
+
+Daily progress table, takeaways, and reflection.
 
 ---
 

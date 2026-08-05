@@ -26,7 +26,7 @@
 
 ### Problem 03 — Kth Unique String
 
-> Count frequencies, then walk in input order and return the kth string with `freq == 1`.
+> Count frequencies, then walk first-appearance order and return the kth string with `freq == 1`.
 
 ---
 
@@ -50,7 +50,7 @@ Restate story problems as exact numeric conditions; use hash maps for counts; pr
 
 | Activity   | Time   |
 | ---------- | ------ |
-| Problem 01 | —      |
-| Problem 02 | —      |
-| Problem 03 | —      |
-| **Total**  | **—**  |
+| Problem 01 | 45 min |
+| Problem 02 | 55 min |
+| Problem 03 | 50 min |
+| **Total**  | **2h 30m** |
