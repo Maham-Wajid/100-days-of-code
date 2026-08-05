@@ -4,9 +4,9 @@
 
 ## Overall Progress
 
-**Completed:** `0 / 100` *(Day 001 in progress — 2/3 problems solved)*
+**Completed:** `1 / 100`
 
-**Progress:** `0%`
+**Progress:** `1%`
 
 **Current Streak:** `1 day` *(active)*
 
@@ -18,7 +18,7 @@
 
 | Day | Date | Problem / Topic | Language | Difficulty | Status |
 | --- | ---- | --------------- | -------- | ---------- | ------ |
-| 001 | Aug 5, 2026 | [Chessboard Cell Color](./Day-001/01-chessboard-cell-color/) · [Youngest Family Member](./Day-001/02-youngest-family-member/) · 1 pending | Python | Easy | 🔄 |
+| 001 | Aug 5, 2026 | [Chessboard](./Day-001/01-chessboard-cell-color/) · [Youngest](./Day-001/02-youngest-family-member/) · [Kth Unique](./Day-001/03-kth-unique-string/) | Python | Easy | ✅ |
 | 002 | —    | —               | —        | —          | ⏳      |
 | 003 | —    | —               | —        | —          | ⏳      |
 | 004 | —    | —               | —        | —          | ⏳      |
@@ -123,7 +123,7 @@
 
 ## 🏆 Milestones
 
-* ✅ Day 001 — Started
+* ✅ Day 001 — Started / completed
 * ⬜ Day 010 — First 10 days
 * ⬜ Day 025 — 25% complete
 * ⬜ Day 050 — Halfway
@@ -156,15 +156,15 @@
 
 ### Biggest Lesson So Far
 
-> Build the numeric rule from a small hand case, then generalize. Reject wrong targets early (e.g. chess parity, receive count = n−1 not m).
+> Hash maps + exact counts beat ad-hoc double loops: frequency first, then one ordered walk (kth unique; degrees for “youngest”).
 
 ### Hardest Problem So Far
 
-> Day 001 P02 (Youngest Family Member) — careful edge cases (`m = 0`, `n = 1`) and full degree conditions.
+> Day 001 P02 (Youngest Family Member) — edge cases and full in/out degree conditions.
 
 ### Most Useful Concept
 
-> Map stories to structure: parity on a grid; graph degrees (in = n−1, out = 0).
+> Frequency maps and degree tables turn “story rules” into O(n) checks.
 
 ### Advice to My Day-1 Self
 
